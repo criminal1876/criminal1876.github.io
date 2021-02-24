@@ -1,4 +1,13 @@
 let tasto;
+let rectY=0;
+
+                let cX=100;
+                let cY=30;
+
+                let incrementoX=1;
+                let incrementoY=1;
+
+                let frameRate;
 
 
   function setup() {
@@ -19,7 +28,47 @@ break;
 
 case "g":
 text("avvio gioco",100, 50);
-text("caricamento",400, 50);
+
+                  rectY=mouseY-50;
+
+                  if(rectY<=0){
+                    rectY=0;
+                  }
+
+                  if(cX>=800){
+                    incrementoX=-incrementoX;
+                  }
+                  if(cY>=600){
+
+                    incrementoY=-incrementoY;
+                  }
+
+                  if(cY<=0){
+
+                    incrementoY=-incrementoY;
+                  }
+
+                  if(cX<=0){
+
+                    incrementoX=-incrementoX;
+                  }
+
+                  if(cX<50){
+                    if(cY>rectY){
+
+
+                    }
+                    incrementoX=-incrementoX;
+                  }
+                  cX=cX+incrementoX;
+                  cY=cY+incrementoY;
+
+                  background(220,0,0);
+                  rect(50,rectY,20,100);
+                  circle(cX,cY,50);
+                  frameRate = getFrameRate(60);
+                  text(frameRate, 20, 40);
+
 
 break;
 
