@@ -3,6 +3,8 @@ var testo = "pagina personagi famosi ";
 var indirizzo = "MORBIDELLI2.html";
 var testo2 = "pagina della scuadra di calcio ";
 var indirizzo2 ="morbidellivincenzo.html";
+var testo3 = "acchiappaPalline";
+var indirizzo3 = "acchiappaPalline.html";
 let rectY=0;
 
                 let cX=100;
@@ -212,6 +214,12 @@ case "s":
 document.write(testo2.link(indirizzo2));
 
 //la stesa cosa che succede nel altro link (per riusare il menu ricaricare la pagina)
+break;
+
+case "z":
+
+document.write(testo3.link(indirizzo3));
+
 break;
   }
 
