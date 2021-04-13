@@ -93,6 +93,7 @@ text("Premi p per metere in pausa ",50, 200);
 text("Premi o per accedere alla pagina degli angoli",50, 300);
 text("premi r per accedere alla pagina dei personagi famosi ",50, 400);
 text("premi s per accedere alla scuadra di calcio  ",50, 500);
+text("Premi z per accedere al gioco acchiappaPalline",50, 600)
  break;
 
  case "o":
