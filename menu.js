@@ -222,7 +222,24 @@ case "z":
 document.write(testo3.link(indirizzo3));
 
 break;
-  }
+
+default:
+ 
+  text("menu",100, 50);
+  
+  fill(0,0,0);
+  textSize(30);
+  text("Premi g per giocare a pong", 50, 100);
+  text("Premi p per metere in pausa ",50, 200);
+  text("Premi o per accedere alla pagina degli angoli",50, 300);
+  text("premi r per accedere alla pagina dei personagi famosi ",50, 400);
+  text("premi s per accedere alla scuadra di calcio  ",50, 500);
+  text("Premi z per accedere al gioco acchiappaPalline",50, 600)
+
+break;
+  
+
+}
 
 
 
