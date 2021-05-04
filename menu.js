@@ -6,6 +6,7 @@ var indirizzo2 ="morbidellivincenzo.html";
 var testo3 = "acchiappaPalline";
 var indirizzo3 = "acchiappaPalline.html";
 let rectY=0;
+let Y=0;
 
                 let cX=100;
                 let cY=30;
@@ -223,6 +224,55 @@ document.write(testo3.link(indirizzo3));
 
 break;
 
+case "q":
+
+  background(0,0,0);
+  
+  fill(255, 255, 255);
+  circle(25, 25, 50);
+  circle(25, 75, 50);
+  circle(25, 125, 50);
+  
+  circle(25, 375, 50);
+
+  // condizione iniziale:  Y=25
+  // condizione finale:  Y=375
+  //istruzione di incremento:  Y<=Y+50
+  //blocco istruzione generico: cirle(25, Y, 50);
+
+ for (Y=25; Y<=375; Y=Y+50) {
+fill(255, 0, 0);
+circle(75, Y, 50);
+
+ }
+
+ // condizione iniziale:  Y=25
+ // condizione finale:  Y=375
+ //istruzione di incremento:  Y<=Y+50
+ //blocco istruzione generico: cirle(25, Y, 50);
+ fill(0, 255, 0);
+
+ Y=25;
+ do {
+       circle(125, Y, 50);
+       Y=Y+50;
+ } while(Y<=375);
+
+ // condizione iniziale:  Y=25
+ // condizione finale:  Y=375
+ //istruzione di incremento:  Y=Y+50
+ //blocco istruzione generico: cirle(25, Y, 50);
+ fill(0, 0, 255);
+
+ Y=25;
+ while(Y<=375) {
+ fill(0, 0, Y/2);
+ circle(175, Y, 50);
+ Y=Y+50;
+ }
+
+break;
+
 default:
  
   text("menu",100, 50);
@@ -234,7 +284,8 @@ default:
   text("Premi o per accedere alla pagina degli angoli",50, 300);
   text("premi r per accedere alla pagina dei personagi famosi ",50, 400);
   text("premi s per accedere alla scuadra di calcio  ",50, 500);
-  text("Premi z per accedere al gioco acchiappaPalline",50, 600)
+  text("Premi z per accedere al gioco acchiappaPalline",50, 600);
+  text("Premi q per accedere al esercizio sui cicli",50,700);
 
 break;
   
